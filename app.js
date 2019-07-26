@@ -1,6 +1,5 @@
-import axios from 'axios'
-import fs from 'fs'
-
+const axios = require( 'axios' );
+const fs = require( 'fs' );
 const inputFilePath = process.argv[2];
 var settings = {
     cashIn: {},
@@ -53,7 +52,7 @@ function wait() {
 function calculation() {
     for ( let i = 0; i < accounts.length; i++ ) {
         let account = accounts[ i ];
-        var uAccount = uniqueAccounts[ account.user_id ];
+        let uAccount = uniqueAccounts[ account.user_id ];
         let result = 0;
 
         if ( !uAccount ) {
@@ -67,7 +66,7 @@ function calculation() {
             let timeElapsed = Math.floor( ( new Date( account.date ).getTime() - uAccount.currentWeeekMondayDate.getTime() ) / ( 1000*60*60*24 ) );
             
             if ( timeElapsed >= 7 ) {
-                uAccount.currentWeeekMondayDate = new Date ( new Date( account.date ).getTime() - (new Date( account.date ).getDay()-1 )*1000*60*60*24 );
+                currentWeeekMondayDate = new Date ( new Date( account.date ).getTime() - (new Date( account.date ).getDay()-1 )*1000*60*60*24 );
                 uAccount.cashOut.amount = 0;
             }
         }
