@@ -3,7 +3,7 @@ Create functioning commision fees calculating app.
 
 **How to run application**<br>
 Cmd commands in project directory:
-- **Run application** - npm start <argument>
+- **Run application** - npm start <-argument>
 - **Example** npm start data/input.json
 
 **Project Hours**<br>
