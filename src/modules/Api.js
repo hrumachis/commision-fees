@@ -22,6 +22,7 @@ class Api {
     await axios.get(path).then((res) => {
       if (res.data !== undefined)
         result = res.data;
+        
     }).catch(() => {
       console.log("ERROR: Can't reach API server.");
     });

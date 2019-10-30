@@ -116,9 +116,9 @@ class Config {
    * get remote conifuration files
    */
   async getRemoteConfig() {
-    await Api.getConfigCashIn().then(res => this.setCashIn(res.data));
-    await Api.getConfigCashOutNatural().then(res => this.setCashOuJuridical(res.data));
-    await Api.getConfigCashOutJuridical().then(res => this.setCashOutNatural(res.data));
+    await Api.getConfigCashIn().then(res => this.setCashIn(res));
+    await Api.getConfigCashOutNatural().then(res => this.setCashOutNatural(res));
+    await Api.getConfigCashOutJuridical().then(res => this.setCashOuJuridical(res));
   }
 }
 
