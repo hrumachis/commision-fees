@@ -15,9 +15,3 @@ Project started July 26, 2019 and finished August 2, 2019 Total hours: **~24**
  - **~4 hours** - App, Time, Users system, User model.
  - **~2 hours** - Connecting objects, completing application logic flow.
  - **~2 hours** - Testing, fixing, commenting.
-
-**Other libraries**<br>
-- **esm** - 
-- **axios** - 
-- **module-alias** - 
-- **eslint** - 
